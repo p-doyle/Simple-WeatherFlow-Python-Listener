@@ -35,7 +35,7 @@ OBS_ST_MAP = [
     ('UV', 'Index'),
     ('Solar Radiation', 'W/m^2'),
     ('Precip Accumulated', 'mm'),
-    ('Precipitation Type', '"0 = none'),
+    ('Precipitation Type', '0 = none, 1 = rain, 2 = hail'),
     ('Lightning Strike Avg Distance', 'km'),
     ('Lightning Strike Count', ''),
     ('Battery', 'Volts'),

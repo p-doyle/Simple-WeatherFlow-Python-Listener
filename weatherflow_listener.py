@@ -56,14 +56,15 @@ EVT_STRIKE_MAP = [
     ('Energy', '')
 ]
 
-# ip/port to bind to
+# ip/port to listen to
 BROADCAST_IP = '239.255.255.250'
 BROADCAST_PORT = 50222
 
+# create the listener socket
 sock_list = [create_broadcast_listener_socket(BROADCAST_IP, BROADCAST_PORT)]
 
 while True:
-    # small sleep otherwise this will loop too fast and eat a lot of CPU
+    # small sleep otherwise this will loop too fast between messages and eat a lot of CPU
     time.sleep(0.01)
 
     # wait until there is a message to read
